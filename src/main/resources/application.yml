@@ -1,0 +1,15 @@
+server:
+    port : 8082
+# Set current active profile
+spring:
+    cloud:
+        config:
+            label: master
+            server:
+                 git:
+                    default-label: master
+                    clone-on-start: false
+                    uri: git@github.com:Divyai2i/config-repo.git
+                    skipSslValidation: true
+                    username: Divyai2i
+                    password: divyatamil#2307
